@@ -16,7 +16,7 @@ Page({
   inputCurrentValue(e) {
     //监听输入值，setData改变值
     this.setData({
-      [e.currentTarget.dataset.name] : e.detail.value.trim()
+      [e.currentTarget.dataset.name] : e.detail.value.replace(/\s+/g,"")
     });
   },
   formSubmit(e) {

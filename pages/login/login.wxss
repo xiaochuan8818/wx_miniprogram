@@ -1,0 +1,78 @@
+/**index.wxss**/
+.login_container{
+  width: 100%;
+  height: auto;
+}
+.header{
+  width: 100%;
+  height: auto;
+  background: #22cb9a;
+  padding:40rpx 0 30rpx 0;
+}
+.image_header{
+  display: block;
+  width: 611rpx;
+  height: 262rpx;
+  margin: 0 auto;
+}
+.form_group{
+  display: block;
+  margin-top: 48rpx;
+}
+.section{
+  display: flex;
+  align-items: center;
+  height: 78rpx;
+  line-height: 78rpx;
+  width: 94%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #efefef;
+  margin-bottom: 60rpx;
+}
+.pass_icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.pass_icon image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section_icon {
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 24rpx;
+}
+.section_icon image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.section input{
+  display: block;
+  height: 78rpx;
+  line-height: 78rpx;
+  flex: 1;
+}
+.btn-area{
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 60rpx;
+}
+.btn-area button{
+  color: #cccccc;
+}
+.other_group{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  color: #666666;
+}
+.login_active{
+  background: #22cb9a;
+  color: white!important;
+}

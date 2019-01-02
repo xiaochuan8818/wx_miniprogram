@@ -1,0 +1,32 @@
+<!--pages/register.wxml-->
+<view class="login_container">
+  <view class="header">
+     <image class="image_header" src="../../static/register-bg.png"></image>
+     <view class="image_step">
+      <image src="../../static/decorate.png"></image>
+     </view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset" class="form_group">
+    <view class="section">
+      <view class="section_icon">
+        <image src="../../static/username.png"></image>
+      </view>
+      <input name="username" placeholder="请输入4-12位用户名" auto-focus value="{{username}}" bindinput="inputCurrentValue" data-name="username"/>
+      <view class="pass_icon" style="display:{{username.length>=4&&username.length<13?'block':'none'}}">
+        <image src="../../static/pass.png"></image>
+      </view>
+    </view>
+    <view class="section">
+      <view class="section_icon">
+        <image src="../../static/password.png"></image>
+      </view>
+      <input password name="password" placeholder="请输入至少6位密码" value="{{password}}" bindinput='inputCurrentValue' data-name="password"/>
+      <view class="pass_icon" style="display:{{password.length>=6?'block':'none'}}">
+        <image src="../../static/pass.png"></image>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit" class="{{username.length>=4&&password.length>=6&&username.length<13?'login_active':''}}">注册</button>
+    </view>
+  </form>
+</view>

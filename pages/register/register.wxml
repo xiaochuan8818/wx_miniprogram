@@ -25,8 +25,29 @@
         <image src="../../static/pass.png"></image>
       </view>
     </view>
+    <view class="section">
+      <view class="section_icon">
+        <image src="../../static/password.png"></image>
+      </view>
+      <input password name="repassword" placeholder="请再次输入密码" value="{{repassword}}" bindinput='inputCurrentValue' data-name="repassword"/>
+      <view class="pass_icon" style="display:{{repassword==password&&repassword?'block':'none'}}">
+        <image src="../../static/pass.png"></image>
+      </view>
+    </view>
+    <view class="section validate_section">
+      <view class="section_icon">
+        <image src="../../static/valicode.png"></image>
+      </view>
+      <input password name="valicode" placeholder="请输入图案内容" value="{{valicode}}" bindinput='inputCurrentValue' data-name="valicode"/>
+      <view class="pass_icon" style="display:{{valicode.length==4?'block':'none'}}">
+        <image src="../../static/pass.png"></image>
+      </view>
+      <view class="valicode_img">
+        <image src="{{codeUrl}}" bindtap='changeValicode'></image>
+      </view>
+    </view>
     <view class="btn-area">
-      <button form-type="submit" class="{{username.length>=4&&password.length>=6&&username.length<13?'login_active':''}}">注册</button>
+      <button form-type="submit" class="{{username.length>=4&&password.length>=6&&password==repassword&&username.length<13&&valicode.length==4?'login_active':''}}">注册</button>
     </view>
   </form>
 </view>

@@ -1,0 +1,20 @@
+/* pages/login_entry.wxss */
+page{
+  height: 100%;
+}
+.login_entry_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login_entry_container>view{
+  width: 500rpx;
+  height: 150rpx;
+}
+.login_entry_container>view button{
+  background: #22cb9a;
+  color: white;
+}

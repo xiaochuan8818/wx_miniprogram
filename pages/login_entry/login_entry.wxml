@@ -1,0 +1,9 @@
+<!--pages/login_entry.wxml-->
+<view class="login_entry_container">
+  <view class="wx_login_entry">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信授权登录</button>
+  </view>
+  <view class="user_login_entry">
+    <button>注册/登录</button>
+  </view>
+</view>

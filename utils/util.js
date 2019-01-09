@@ -28,7 +28,7 @@ const wxRequest = function( param,self ) {
     let _params = Object.assign( {},{
       method : 'POST',
       header : {
-        'content-type' : 'application/json'
+        'content-type': 'application/x-www-form-urlencoded'
       },
       success : function( res ) {
         wx.hideLoading();

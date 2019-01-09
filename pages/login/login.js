@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-const wjs =  require('../../utils/common');
+const { util,apiModule } =  require('../../utils/common');
 Page({
   data: {
     userInfo: {},
@@ -25,6 +25,11 @@ Page({
       return;
     }
     let { username,password } = e.detail.value;
-    console.log('login')
+    apiModule.userLogin({ username,password }).then( res=> {
+      if( res.code === '000' ) {
+        wx.setStorageSync('userMsg', res.data);
+      }
+      util.showToast({ title: res.msg });
+    })
   }
 })

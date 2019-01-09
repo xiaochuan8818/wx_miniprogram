@@ -11,7 +11,7 @@
 .image_header{
   display: block;
   width:338rpx;
-  height:297rpx;
+  height:250rpx;
   margin:0 auto;
 }
 .image_step{
@@ -37,7 +37,7 @@
   margin: 0 auto;
   font-size: 30rpx;
   border-bottom: 1rpx solid #efefef;
-  margin-bottom: 60rpx;
+  margin-bottom: 40rpx;
 }
 .pass_icon{
   width: 30rpx;
@@ -84,4 +84,15 @@
 .login_active{
   background: #22cb9a;
   color: white!important;
+}
+.valicode_img{
+  width: 170rpx;
+  height:50rpx;
+}
+.valicode_img image{
+  width: 100%!important;
+  height: 100%!important;
+}
+.validate_section .pass_icon{
+  margin-right: 20rpx;
 }
